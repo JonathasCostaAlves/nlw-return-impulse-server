@@ -11,7 +11,7 @@ datasource db {
 }
  
 
-model Feedback{
+model Feedbacks{
   id String @id @default(uuid())
 
   type       String
