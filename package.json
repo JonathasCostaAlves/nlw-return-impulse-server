@@ -6,11 +6,11 @@
   "scripts": {
     "test": "jest",
     "build": "tsc",
-    "start": "prisma generate node dist/server.js ",
+    "start": "node dist/server.js prisma generate",
     "dev": "ts-node-dev src/server.ts"
   },
   "keywords": [],
-  "author": "",
+  "author": "Jonathas Costa",
   "license": "ISC",
   "devDependencies": {
     "@swc/core": "^1.2.181",
