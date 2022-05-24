@@ -63,6 +63,7 @@ export class SubmiteFeedbackUseCase {
         `</div>`,
         
         screenshot ? `<img src="${screenshot}" />` : ``,
+        `</main>`
             ].join('\n')
         })
     }
