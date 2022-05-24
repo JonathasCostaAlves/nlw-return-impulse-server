@@ -37,7 +37,14 @@ export class SubmiteFeedbackUseCase {
         await this.mailAdapter.sendMail({
             subject: "Novo feedback",
             body: [
-                `<div style="width: 100vw; height: 100vh; overflow: hidden; display: flex; justify-content: space-between;"flex-direction: column;>`,
+                `<div 
+                style="
+                width: 100vw;
+                height: 100vh;
+                overflow: hidden;
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;">`,
 
                 `<header style="display: flex; justify-content: flex-start; background-color: #8257E5; color: #fff;  align-items: center;">`,
                     `<a href="#">`,
