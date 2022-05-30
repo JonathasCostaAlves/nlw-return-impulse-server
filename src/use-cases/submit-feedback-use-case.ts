@@ -39,12 +39,7 @@ export class SubmiteFeedbackUseCase {
             body: [
                 `<div 
                 style="
-                width: 100vw;
-                height: 100vh;
-                overflow: hidden;
-                display: flex;
-                justify-content: space-between;
-                flex-direction: column;">`,
+                overflow-x: hidden;">`,
 
                 `<header style="display: flex; justify-content: flex-start; background-color: #8257E5; color: #fff;  align-items: center;">`,
                     `<a href="#">`,
@@ -69,7 +64,7 @@ export class SubmiteFeedbackUseCase {
                     `<p  style="font-size: 14px;">Tipo de feedback: ${type}</p>`,
                     `<p  style="font-size: 14px;">${comment}</p>`,
                 `</div>`,
-                screenshot ? `<img src="${screenshot}"/>` : ``,
+                screenshot ? `<img src="${screenshot}" style="width:300px"/>` : ``,
                 `</div>`
             ].join('\n')
         })
